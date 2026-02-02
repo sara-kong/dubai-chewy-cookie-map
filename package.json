@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync-stores": "node scripts/sync-stores-from-sheets.js",
+    "sync-sheet": "node scripts/sync-sheet.js"
   },
   "dependencies": {
     "next": "^14.2.0",
@@ -17,6 +19,7 @@
     "lucide-react": "^0.344.0"
   },
   "devDependencies": {
+    "googleapis": "^144.0.0",
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
