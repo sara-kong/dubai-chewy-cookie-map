@@ -25,8 +25,8 @@ const getMarkerIcon = (): google.maps.Icon => ({
   anchor: new google.maps.Point(20, 28),
 });
 
-// Google Maps libraries - typed as const array
-const libraries = ['places'] as const;
+// Google Maps libraries - explicitly typed as mutable array of allowed library names
+const libraries: ("drawing" | "geometry" | "localContext" | "places" | "visualization")[] = ["places"];
 
 export default function MapPage() {
   const [showOnboarding, setShowOnboarding] = useState(true);
