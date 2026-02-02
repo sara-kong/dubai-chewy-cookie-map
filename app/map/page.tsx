@@ -25,6 +25,9 @@ const getMarkerIcon = (): google.maps.Icon => ({
   anchor: new google.maps.Point(20, 28),
 });
 
+// Google Maps libraries - typed as const array
+const libraries = ['places'] as const;
+
 export default function MapPage() {
   const [showOnboarding, setShowOnboarding] = useState(true);
   const [stores, setStores] = useState<Store[]>([]);
@@ -69,8 +72,6 @@ export default function MapPage() {
   const handleClosePopup = useCallback(() => {
     setSelectedStore(null);
   }, []);
-
-  const libraries = useMemo(() => ['places'], []);
 
   // Initialize marker icon when map loads
   const handleMapLoad = useCallback((mapInstance: google.maps.Map) => {
