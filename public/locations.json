@@ -53,7 +53,7 @@
       "Google"
     ],
     "discoveredFrom": "manual",
-    "discoveredAt": "2026-02-02T23:26:46.509Z"
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
   },
   {
     "id": 5,
@@ -68,6 +68,166 @@
       "Atly"
     ],
     "discoveredFrom": "manual",
-    "discoveredAt": "2026-02-02T23:26:46.509Z"
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 6,
+    "name": "Archives of Us",
+    "address": "555 N Spring St Suite 201, Los Angeles, CA 90012, USA",
+    "lat": 34.0548,
+    "lng": -118.24,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: Multiple mentions"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 7,
+    "name": "Ondo Bakery",
+    "address": "324 S State St, Ann Arbor, MI 48104, USA",
+    "lat": 42.2767,
+    "lng": -83.7428,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok",
+      "Yelp"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 8,
+    "name": "One Bite Cafe",
+    "address": "1026 NE 65th St, Ste A102, Seattle, WA 98115, USA",
+    "lat": 47.6759886,
+    "lng": -122.3162847,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @onebitecafe"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 9,
+    "name": "Shilla Bakery & Cafe",
+    "address": "340 Maple Ave W, Vienna, VA 22180, USA",
+    "lat": 38.901,
+    "lng": -77.265,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @injectorjessi"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 10,
+    "name": "Hannam Chain Market",
+    "address": "2740 W Olympic Blvd, Los Angeles, CA 90006, USA",
+    "lat": 34.0521,
+    "lng": -118.2932,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @kaitlynewong"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 11,
+    "name": "Beque KBBQ",
+    "address": "1825 Post St, San Francisco, CA 94115, USA",
+    "lat": 37.7849664,
+    "lng": -122.4320604,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @michelleahuang"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 12,
+    "name": "Papa Chocolate",
+    "address": "11405 S Harlem Ave, Worth, IL 60482, USA",
+    "lat": 41.6881,
+    "lng": -87.8041,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @_karolxo"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 13,
+    "name": "Artist Street",
+    "address": "621 S Western Ave, Ste 302, Los Angeles, CA 90005, USA",
+    "lat": 34.0628,
+    "lng": -118.3093,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @artiststreetla"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 14,
+    "name": "Grace Street Coffee & Desserts",
+    "address": "17 W 32nd St, New York, NY 10001, USA",
+    "lat": 40.7484,
+    "lng": -73.987,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok",
+      "Instagram"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 15,
+    "name": "Bear Donut",
+    "address": "40 W 31st St, New York, NY 10001, USA",
+    "lat": 40.7472,
+    "lng": -73.9882,
+    "verified": false,
+    "verifiedSources": [
+      "Instagram",
+      "TikTok reviews"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 16,
+    "name": "Seoul Sweets",
+    "address": "308 5th Ave, New York, NY 10001, USA",
+    "lat": 40.7488,
+    "lng": -73.9854,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok",
+      "Instagram"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
+  },
+  {
+    "id": 17,
+    "name": "Bang Cookies",
+    "address": "128 Newark Ave, Jersey City, NJ 07302, USA",
+    "lat": 40.7247,
+    "lng": -74.0431,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @newjerseybubu"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:41:41.899Z"
   }
 ]
