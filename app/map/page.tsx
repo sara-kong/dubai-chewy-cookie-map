@@ -26,7 +26,7 @@ const getMarkerIcon = (): google.maps.Icon => ({
 });
 
 // Google Maps libraries - explicitly typed as mutable array of allowed library names
-const libraries: ("drawing" | "geometry" | "localContext" | "places" | "visualization")[] = ["places"];
+const libraries: ("drawing" | "geometry" | "places" | "visualization")[] = ["places"];
 
 export default function MapPage() {
   const [showOnboarding, setShowOnboarding] = useState(true);
