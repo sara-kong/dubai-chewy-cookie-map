@@ -4,6 +4,7 @@ import { useState, useCallback, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { Store } from '@/types/store';
+import { stores } from '@/data/stores';
 import StorePopup from '@/components/StorePopup';
 import SearchBar from '@/components/SearchBar';
 import Onboarding from '@/components/Onboarding';
@@ -30,29 +31,10 @@ const libraries: ("drawing" | "geometry" | "places" | "visualization")[] = ["pla
 
 export default function MapPage() {
   const [showOnboarding, setShowOnboarding] = useState(true);
-  const [stores, setStores] = useState<Store[]>([]);
-  const [storesLoading, setStoresLoading] = useState(true);
   const [selectedStore, setSelectedStore] = useState<Store | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [map, setMap] = useState<google.maps.Map | null>(null);
   const [markerIcon, setMarkerIcon] = useState<google.maps.Icon | null>(null);
-
-  useEffect(() => {
-    fetch('/api/stores')
-      .then((res) => res.json())
-      .then((data) => {
-        if (Array.isArray(data.stores)) {
-          setStores(
-            data.stores.map((s: Store & { discoveredAt: string }) => ({
-              ...s,
-              discoveredAt: new Date(s.discoveredAt),
-            }))
-          );
-        }
-      })
-      .catch(() => setStores([]))
-      .finally(() => setStoresLoading(false));
-  }, []);
 
   const handleMarkerClick = useCallback((store: Store) => {
     setSelectedStore(store);
@@ -113,8 +95,7 @@ export default function MapPage() {
                 fullscreenControl: true,
               }}
             >
-              {!storesLoading &&
-                stores.map((store) => (
+              {stores.map((store) => (
                   <Marker
                     key={store.id}
                     position={{ lat: store.lat, lng: store.lng }}
