@@ -53,7 +53,7 @@
       "Google"
     ],
     "discoveredFrom": "manual",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 5,
@@ -68,7 +68,7 @@
       "Atly"
     ],
     "discoveredFrom": "manual",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@
       "TikTok: Multiple mentions"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@
       "Yelp"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 8,
@@ -108,7 +108,7 @@
       "TikTok: @onebitecafe"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 9,
@@ -121,7 +121,7 @@
       "TikTok: @injectorjessi"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 10,
@@ -134,7 +134,7 @@
       "TikTok: @kaitlynewong"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 11,
@@ -147,7 +147,7 @@
       "TikTok: @michelleahuang"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 12,
@@ -160,7 +160,7 @@
       "TikTok: @_karolxo"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 13,
@@ -173,21 +173,7 @@
       "TikTok: @artiststreetla"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
-  },
-  {
-    "id": 14,
-    "name": "Grace Street Coffee & Desserts",
-    "address": "17 W 32nd St, New York, NY 10001, USA",
-    "lat": 40.7484,
-    "lng": -73.987,
-    "verified": false,
-    "verifiedSources": [
-      "TikTok",
-      "Instagram"
-    ],
-    "discoveredFrom": "manual",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 15,
@@ -201,21 +187,7 @@
       "TikTok reviews"
     ],
     "discoveredFrom": "manual",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
-  },
-  {
-    "id": 16,
-    "name": "Seoul Sweets",
-    "address": "308 5th Ave, New York, NY 10001, USA",
-    "lat": 40.7488,
-    "lng": -73.9854,
-    "verified": false,
-    "verifiedSources": [
-      "TikTok",
-      "Instagram"
-    ],
-    "discoveredFrom": "manual",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   },
   {
     "id": 17,
@@ -228,6 +200,126 @@
       "TikTok: @newjerseybubu"
     ],
     "discoveredFrom": "tiktok",
-    "discoveredAt": "2026-02-02T23:41:41.899Z"
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 18,
+    "name": "Yogurt Club",
+    "address": "1240 Lexington Ave, New York, NY 10028, USA",
+    "lat": 40.7789,
+    "lng": -73.9539,
+    "verified": false,
+    "verifiedSources": [
+      "Atly reviews",
+      "The Infatuation"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 19,
+    "name": "Cafe W",
+    "address": "3529 154th St, Flushing, NY 11354, USA",
+    "lat": 40.7606,
+    "lng": -73.8219,
+    "verified": false,
+    "verifiedSources": [
+      "Yelp reviews mention Dubai chocolate mochi"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 20,
+    "name": "Ugly Donuts & Corn Dogs",
+    "address": "398 Knickerbocker Ave, Brooklyn, NY 11237, USA",
+    "lat": 40.7046,
+    "lng": -73.9202,
+    "verified": false,
+    "verifiedSources": [
+      "Menu lists Dubai Chewy Cookie"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 21,
+    "name": "Tous Les Jours",
+    "address": "31 W 32nd St, New York, NY 10001, USA",
+    "lat": 40.7479,
+    "lng": -73.9873,
+    "verified": false,
+    "verifiedSources": [
+      "Korean bakery chain in Koreatown"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 22,
+    "name": "Boba Pup",
+    "address": "1080 Kiely Blvd, Santa Clara, CA 95051, USA",
+    "lat": 37.3556,
+    "lng": -121.9762,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @baaezel",
+      "Yelp reviews mention Dubai chocolate"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 23,
+    "name": "Basquia Bakery (Jagalchi)",
+    "address": "63 Serramonte Center, Daly City, CA 94015, USA",
+    "lat": 37.6706,
+    "lng": -122.4703,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @marcymunchies",
+      "@3ll3bsai"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 24,
+    "name": "Amazing Katsu",
+    "address": "2670 El Camino Real, Santa Clara, CA 95051, USA",
+    "lat": 37.351,
+    "lng": -121.9757,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @gwenlloves - Dubai mochi ball"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 25,
+    "name": "Pekoe Tea Bar",
+    "address": "3276 S White Rd, San Jose, CA 95148, USA",
+    "lat": 37.3738,
+    "lng": -121.8722,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @pekoeteabar"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
+  },
+  {
+    "id": 26,
+    "name": "Spectra Coffee",
+    "address": "5353 Almaden Expy, San Jose, CA 95118, USA",
+    "lat": 37.2521,
+    "lng": -121.8794,
+    "verified": false,
+    "verifiedSources": [
+      "TikTok: @vivianengxyen - Jiwoo Bake pop-up"
+    ],
+    "discoveredFrom": "tiktok",
+    "discoveredAt": "2026-02-02T23:56:18.995Z"
   }
 ]
