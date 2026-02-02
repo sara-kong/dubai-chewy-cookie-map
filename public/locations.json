@@ -39,5 +39,35 @@
     ],
     "discoveredFrom": "manual",
     "discoveredAt": "2026-01-20T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Croffle House",
+    "address": "40-17 149th Pl, Flushing, NY 11354, USA",
+    "lat": 40.7603,
+    "lng": -73.8293,
+    "verified": false,
+    "verifiedSources": [
+      "Yelp",
+      "Uber Eats",
+      "Google"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:16:13.673Z"
+  },
+  {
+    "id": 5,
+    "name": "GoGoJang Cafe",
+    "address": "150 W 55th St, New York, NY 10019, USA",
+    "lat": 40.7649,
+    "lng": -73.9782,
+    "verified": false,
+    "verifiedSources": [
+      "Google",
+      "Corner",
+      "Atly"
+    ],
+    "discoveredFrom": "manual",
+    "discoveredAt": "2026-02-02T23:16:13.673Z"
   }
 ]
