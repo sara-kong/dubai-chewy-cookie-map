@@ -1,14 +1,50 @@
 'use client';
 
-import { useState, useCallback, useMemo, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { Store } from '@/types/store';
-import { stores } from '@/data/stores';
 import StorePopup from '@/components/StorePopup';
 import SearchBar from '@/components/SearchBar';
 import Onboarding from '@/components/Onboarding';
 import { Search } from 'lucide-react';
+
+/** Raw location from /locations.json */
+interface LocationFromJson {
+  id: number;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  verified: boolean;
+  verifiedSources: string | string[];
+  discoveredFrom: string;
+  discoveredAt: string;
+}
+
+function locationToStore(loc: LocationFromJson): Store {
+  const verifiedSources = Array.isArray(loc.verifiedSources)
+    ? loc.verifiedSources
+    : (loc.verifiedSources || '').split(',').map((s) => s.trim()).filter(Boolean);
+  let discoveredAt: Date;
+  if (loc.discoveredAt) {
+    const d = new Date(loc.discoveredAt);
+    discoveredAt = Number.isNaN(d.getTime()) ? new Date() : d;
+  } else {
+    discoveredAt = new Date();
+  }
+  return {
+    id: String(loc.id),
+    name: loc.name ?? '',
+    address: loc.address ?? '',
+    lat: Number(loc.lat) || 0,
+    lng: Number(loc.lng) || 0,
+    verified: Boolean(loc.verified),
+    verifiedSources,
+    discoveredFrom: (loc.discoveredFrom === 'tiktok' || loc.discoveredFrom === 'instagram' ? loc.discoveredFrom : 'manual') as Store['discoveredFrom'],
+    discoveredAt,
+  };
+}
 
 const mapContainerStyle = {
   width: '100%',
@@ -31,10 +67,32 @@ const libraries: ("drawing" | "geometry" | "places" | "visualization")[] = ["pla
 
 export default function MapPage() {
   const [showOnboarding, setShowOnboarding] = useState(true);
+  const [stores, setStores] = useState<Store[]>([]);
+  const [storesLoading, setStoresLoading] = useState(true);
+  const [storesError, setStoresError] = useState<string | null>(null);
   const [selectedStore, setSelectedStore] = useState<Store | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [map, setMap] = useState<google.maps.Map | null>(null);
   const [markerIcon, setMarkerIcon] = useState<google.maps.Icon | null>(null);
+
+  useEffect(() => {
+    setStoresLoading(true);
+    setStoresError(null);
+    fetch('/locations.json')
+      .then((res) => {
+        if (!res.ok) throw new Error(`Failed to load locations: ${res.status}`);
+        return res.json();
+      })
+      .then((data: LocationFromJson[]) => {
+        const list = Array.isArray(data) ? data : [];
+        setStores(list.map(locationToStore));
+      })
+      .catch((err) => {
+        setStoresError(err instanceof Error ? err.message : 'Failed to load locations');
+        setStores([]);
+      })
+      .finally(() => setStoresLoading(false));
+  }, []);
 
   const handleMarkerClick = useCallback((store: Store) => {
     setSelectedStore(store);
@@ -78,6 +136,16 @@ export default function MapPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
+          {storesError && (
+            <div className="absolute top-20 left-1/2 -translate-x-1/2 z-50 bg-red-50 border border-red-200 text-red-800 px-4 py-2 rounded-lg shadow-md text-sm font-sans max-w-md text-center">
+              {storesError}
+            </div>
+          )}
+          {storesLoading && (
+            <div className="absolute top-20 left-1/2 -translate-x-1/2 z-50 bg-white/90 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg shadow-md text-sm font-sans">
+              Loading locations…
+            </div>
+          )}
           <LoadScript
             googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
             libraries={libraries}
@@ -95,7 +163,8 @@ export default function MapPage() {
                 fullscreenControl: true,
               }}
             >
-              {stores.map((store) => (
+              {!storesLoading &&
+                stores.map((store) => (
                   <Marker
                     key={store.id}
                     position={{ lat: store.lat, lng: store.lng }}
