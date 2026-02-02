@@ -1,5 +1,6 @@
 import type { Store } from '@/types/store';
-import { getCandidateById } from '@/lib/discovery/store-candidates';
+// TODO: Re-enable when discovery system is implemented
+// import { getCandidateById } from '@/lib/discovery/store-candidates';
 import { appendStore } from '@/lib/stores-table';
 import { US_BOUNDS } from '@/types/store';
 
@@ -21,10 +22,12 @@ export function verifyStoreCandidate(
   candidateId: string,
   options?: VerifyStoreCandidateOptions
 ): Store {
-  const candidate = getCandidateById(candidateId);
-  if (!candidate) {
-    throw new Error(`Candidate not found: ${candidateId}`);
-  }
+  // TODO: Re-enable when discovery system is implemented
+  // const candidate = getCandidateById(candidateId);
+  // if (!candidate) {
+  //   throw new Error(`Candidate not found: ${candidateId}`);
+  // }
+  throw new Error('Discovery system not yet implemented');
 
   const address =
     options?.address?.trim() ||
