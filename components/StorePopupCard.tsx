@@ -51,10 +51,10 @@ export default function StorePopupCard({ name, address, isNew, onOpenMapsClick, 
           <div className="w-full h-full bg-gray-300" />
         </div>
 
-        {/* Right: name, badge, address, button */}
+        {/* Right: name + badge inline, address, button */}
         <div className="flex-1 flex flex-col min-w-0 justify-between gap-2">
-          <div className="flex items-start justify-between gap-2 flex-shrink-0">
-            <h2 className="font-sans font-bold text-[20px] leading-[24px] text-figma-black m-0 flex-1 min-w-0 break-words">
+          <div className="flex items-center gap-2 flex-shrink-0 flex-wrap">
+            <h2 className="font-sans font-bold text-[20px] leading-[24px] text-figma-black m-0 break-words">
               {name}
             </h2>
             {isNew === true && (
