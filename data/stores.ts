@@ -16,8 +16,10 @@ const SEED_STORES: readonly Store[] = [
     address: '17 W 32nd St, New York, NY 10001, USA',
     lat: 40.7484,
     lng: -73.9870,
-    discoveredAt: new Date('2026-01-25T00:00:00Z'),
+    verified: true,
     verifiedSources: ['TikTok: @cookieenthusiast', 'Instagram: @gracestreet'],
+    discoveredFrom: 'manual',
+    discoveredAt: new Date('2026-01-25T00:00:00Z'),
   },
   {
     id: '2',
@@ -25,8 +27,10 @@ const SEED_STORES: readonly Store[] = [
     address: '40 W 31st St, New York, NY 10001, USA',
     lat: 40.7472,
     lng: -73.9882,
-    discoveredAt: new Date('2026-01-22T00:00:00Z'),
+    verified: true,
     verifiedSources: ['Instagram: @beardonutinc'],
+    discoveredFrom: 'manual',
+    discoveredAt: new Date('2026-01-22T00:00:00Z'),
   },
   {
     id: '3',
@@ -34,8 +38,10 @@ const SEED_STORES: readonly Store[] = [
     address: '308 5th Ave, New York, NY 10001, USA',
     lat: 40.7488,
     lng: -73.9854,
-    discoveredAt: new Date('2026-01-20T00:00:00Z'),
+    verified: true,
     verifiedSources: ['TikTok: @seoulsweetsnyc', 'Instagram: @seoulsweetsnyc'],
+    discoveredFrom: 'manual',
+    discoveredAt: new Date('2026-01-20T00:00:00Z'),
   },
 ];
 

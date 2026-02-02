@@ -24,7 +24,7 @@ A curated map-based web app that shows **U.S. only** locations selling the "Duba
 npm install
 ```
 
-2. Create a `.env.local` file in the root directory:
+2. Create a `.env.local` file in the root directory (only Maps JavaScript API is used for map display; no Geocoding or billing-required APIs):
 ```
 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
 ```
@@ -82,7 +82,7 @@ interface Store {
 
 - Next.js 14 (App Router)
 - TypeScript
-- Google Maps API
+- Google Maps JavaScript API (map display and markers only; locations use stored `lat`/`lng`; no Geocoding API)
 - Framer Motion (swipe gestures)
 - Tailwind CSS
 - Lucide React (icons)
